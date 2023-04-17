@@ -60,17 +60,15 @@ export default defineType({
         title: 'Date',
         type: 'datetime',
         initialValue: () => new Date().toISOString(),
-      }),
+    }),
   ],
   preview: {
     select: {
       title: 'title',
       media: 'coverImage',
-      date: 'date',
-      excerpt: 'excerpt',
     },
-    prepare({ title, media, excerpt}) {
-      return { title, media, excerpt }
+    prepare({ title, media, }) {
+      return { title, media, }
     },
   },
 })
