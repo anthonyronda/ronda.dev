@@ -66,6 +66,7 @@ export default defineType({
     select: {
       title: 'title',
       media: 'coverImage',
+      date: 'date',
       excerpt: 'excerpt',
     },
     prepare({ title, media, excerpt}) {
