@@ -55,6 +55,12 @@ export default defineType({
         hotspot: true,
       },
     }),
+    defineField({
+        name: 'date',
+        title: 'Date',
+        type: 'datetime',
+        initialValue: () => new Date().toISOString(),
+      }),
   ],
   preview: {
     select: {
